@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffeerek - Privacy</title>
+    <meta name="author" content="Mateusz Lipowski">
+    <style>
+        .menu {
+            background: #303030;
+            top: 0;
+            left: 0;
+            padding: 0 3rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .menu a {
+            margin: 0 2rem;
+            text-decoration: none;
+            padding: 0.5rem .5rem;
+            color: rgb(255, 255, 255);
+            font-family: arial black, sans-serif;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        body {
+            font-family: sans-serif;
+            padding: 0;
+            margin: 0;
+            background: rgb(66, 66, 66);
+            color: white;
+        }
+
+        .s-a h1 {
+            margin-top: 20%;
+
+            font-size: 4rem;
+        }
+
+        .s-a button {
+            background: #af6c51;
+            height: 40px;
+            min-width: 70px;
+            margin: 0 2rem;
+            color: white;
+            border-radius: 3px;
+            font-size: 14px;
+            border: 1px;
+         
+        }
+
+        .s-a button:hover {
+            cursor: pointer;
+            background: #ab8779;
+        }
+
+        @font-face {
+            font-family: Arial Black;
+            src: url(fonts/Arial-Black.ttf);
+        }
+
+        .s-b {
+
+            margin-top: 10%;
+
+        }
+
+        .s-b div {
+            display: inline-block;
+            margin: 0 2rem;
+        }
+
+        .s-b1:hover {
+            box-shadow: 0 0 16px 1px rgba(255, 255, 255, 0.8);
+        }
+
+        .s-b2:hover {
+            box-shadow: 0 0 16px 1px rgba(255, 255, 255, 0.8);
+        }
+
+        .s-b3:hover {
+            box-shadow: 0 0 16px 1px rgba(255, 255, 255, 0.8);
+        }
+
+        .s-b1 {
+
+            background: rgb(194, 194, 194);
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            text-align: center;
+
+        }
+
+        .s-b2 {
+
+            background: rgb(194, 194, 194);
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            text-align: center;
+            position: absolute;
+            left: 40%;
+        }
+
+        .s-b3 {
+
+            background: rgb(194, 194, 194);
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            text-align: center;
+            position: absolute;
+            left: 81%;
+        }
+
+        .s-c {
+
+            margin-top: 10%;
+            margin-left: 5%;
+        }
+
+        .s-c .texts-c {
+            margin-left: 70%;
+            margin-top: -25%;
+        }
+
+        @media screen and (max-width: 928px) {
+            .s-cimg {
+                width: 250px;
+                height: auto;
+            }
+        }
+
+        @media screen and (max-width: 797px) {
+            .menua {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+            .s-b {
+                display: none;
+            }
+        }
+        @media screen and (max-width: 797px){
+            .burger
+            {
+                display: block;
+            }
+        }
+        @media screen and (min-width: 797px){
+            .burger
+            {
+                display: none;
+            }
+        }
+        .s-menu {
+            background: #303030;
+            top: 0;
+            left: 0;
+            padding: 0 3rem;
+            display: flex;
+   text-align: center;
+          align-items: center;          
+        }
+
+        .s-menu .texts-menu {
+            padding: 0 3rem;
+text-decoration: none;
+
+color: rgb(255, 255, 255);
+font-family: sans-serif;
+
+
+}
+.s-menu
+{
+    height: 150px;
+}
+a {
+color: white;
+text-decoration: none;
+}
+.wrapper {
+  padding: 32px;
+}
+
+.cookie-container {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: #262626;
+  color: #f5f6fa;
+  padding: 0 32px;
+  box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
+
+  transition: 400ms;
+}
+
+.cookie-container.active {
+  bottom: 0;
+}
+
+.cookie-container a {
+  color: #f5f6fa;
+}
+
+.cookie-btn {
+  background: #262626;
+  border: 1px solid white;
+  color: #ffffff;
+  padding: 12px 48px;
+  font-size: 18px;
+  margin-bottom: 16px;
+
+  cursor: pointer;
+}
+.cookie-btn:hover
+{
+    background: #4f4f4f;
+  border: 1px solid white;
+  color: #ffffff;
+}
+.burger
+{
+    margin-left: 30%;
+}
+.burger ul 
+{
+display: none;
+}
+.burger:hover ul
+{
+    display: block;
+}
+.burger ul
+{
+    width: 200px;
+    height: 150px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    position: absolute;
+    color: black;
+ left: 50%;
+}
+.burger ul a
+{
+    color: black;
+}
+.en
+{
+    background: rgb(180, 196, 99);
+    border: 1px solid #f2ff00;
+    height: 50px;
+    text-align: center;
+   
+}
+.texten
+{
+    font-size: 20px;
+    margin-top: 1%;
+
+}
+.texten a
+{
+    text-decoration: underline;
+}
+.texten a:hover
+{
+    color: #e0e0ff;
+}
+    </style>
+</head>
+
+<body>
+    <nav class="menu"><a href="https://coffeerek.site"><img src="assets/logo.png" width="50"></a>
+        <div class="menua"><a href="https://coffeerek.site">Home Page</a> <a href="https://coffeerek.site/addyourbot">Add Your Bot</a> <a
+                href="https://coffeerek.site/commands">Commands</a></div>
+                <div class="burger"><img src="assets/burger.png" width="50"><center><ul><p><a href="https://coffeerek.site">Home Page</a></p><p><a href="https://coffeerek.site/addyourbot">Add Your Bot</a></p><p><a href="https://coffeerek.site/commands">Commands</a></p></ul></center></div>
+    </nav>
+    <nav class="en"><div class="texten">Check out the English version - <a href="https://coffeerek.site/privacy-en">Privacy EN</a></div></nav>
+    <section class="py-5">
+		<div class="container-fluid container-fluid-wrapper fill">
+	<div class="politykaPrywatnosci">
+	<h1>Polityka prywatności</h1>
+	<hr>
+	<h2>Polityka prywatności opisuje zasady przetwarzania przez nas informacji na Twój temat, w tym danych osobowych oraz ciasteczek, czyli tzw. cookies.</h2>
+	<hr>
+	<div class="lh166">
+	<h2 class="pb-12"><strong>1. Informacje ogólne</strong></h2>
+	<ol>
+	<li>Niniejsza polityka dotyczy Serwisu www, funkcjonującego pod adresem url: <b>coffeerek.site</b></li>
+	<li>Operatorem serwisu oraz Administratorem danych osobowych jest: Mateusz Lipowski </li>
+	
+	<li>Adres kontaktowy poczty elektronicznej operatora: mateuszlipowski16@outlook.com</li>
+	
+	<li>Operator jest Administratorem Twoich danych osobowych w odniesieniu do danych podanych dobrowolnie w Serwisie.</li>
+	<li>Serwis wykorzystuje dane osobowe w następujących celach:</li>
+	<ul><li>Obsługa zapytań przez formularz</li>
+	</ul>
+	<li>Serwis realizuje funkcje pozyskiwania informacji o użytkownikach i ich zachowaniu w następujący sposób:
+	<ol>
+	<li>Poprzez dobrowolnie wprowadzone w formularzach dane, które zostają wprowadzone do systemów Operatora.</li>
+	<li>Poprzez zapisywanie w urządzeniach końcowych plików cookie (tzw. „ciasteczka”).</li>
+	</ol>
+	</li>
+	</ol>
+	<h2 class="pb-12"><strong>2. Wybrane metody ochrony danych stosowane przez Operatora</strong></h2>
+	<ol><li>Miejsca logowania i wprowadzania danych osobowych są chronione w warstwie transmisji (certyfikat SSL). Dzięki temu dane osobowe i dane logowania, wprowadzone na stronie, zostają zaszyfrowane w komputerze użytkownika i mogą być odczytane jedynie na docelowym serwerze.</li>
+	</ol>
+	<h2 class="pb-12"><strong>3. Hosting</strong></h2>
+	<ol>
+	<li>Serwis jest hostowany (technicznie utrzymywany) na serwerach operatora: github</li>
+	</ol>
+	<h2 class="pb-12"><strong>4. Twoje prawa i dodatkowe informacje o sposobie wykorzystania danych</strong></h2>
+	<ol><li>W niektórych sytuacjach Administrator ma prawo przekazywać Twoje dane osobowe innym odbiorcom, jeśli będzie to niezbędne do wykonania zawartej z Tobą umowy lub do zrealizowania obowiązków ciążących na Administratorze. Dotyczy to takich grup odbiorców:<ul><li>osoby upoważnione przez nas, pracownicy i współpracownicy, którzy muszą mieć dostęp do danych osobowych w celu wykonywania swoich obowiązków,</li><li>firma hostingowa,</li><li>firmy obsługująca mailingi,</li><li>firmy obsługująca komunikaty SMS,</li><li>firmy, z którymi Administrator współpracuje w zakresie marketingu własnego,</li><li>kurierzy,</li><li>ubezpieczyciele,</li><li>kancelarie prawne i windykatorzy,</li><li>banki,</li><li>operatorzy płatności,</li><li>organy publiczne.</li></ul></li>
+	<li>Twoje dane osobowe przetwarzane przez Administratora nie dłużej, niż jest to konieczne do wykonania związanych z nimi czynności określonych osobnymi przepisami (np. o prowadzeniu rachunkowości). W odniesieniu do danych marketingowych dane nie będą przetwarzane dłużej niż przez 3 lata.</li>
+	<li>Przysługuje Ci prawo żądania od Administratora:
+	<ul>
+	<li>dostępu do danych osobowych Ciebie dotyczących,</li>
+	<li>ich sprostowania,</li>
+	<li>usunięcia,</li>
+	<li>ograniczenia przetwarzania,</li>
+	<li>oraz przenoszenia danych.</li>
+	</ul>
+	</li>
+	<li>Przysługuje Ci prawo do złożenia sprzeciwu w zakresie przetwarzania wskazanego w pkt 3.3 c) wobec przetwarzania danych osobowych w celu wykonania prawnie uzasadnionych interesów realizowanych przez Administratora, w tym profilowania, przy czym prawo sprzeciwu nie będzie mogło być wykonane w przypadku istnienia ważnych prawnie uzasadnionych podstaw do przetwarzania, nadrzędnych wobec Ciebie interesów, praw i wolności, w szczególności ustalenia, dochodzenia lub obrony roszczeń.</li>
+	<li>Na działania Administratora przysługuje skarga do Prezesa Urzędu Ochrony Danych Osobowych, ul. Stawki 2, 00-193 Warszawa.</li>
+	<li>Podanie danych osobowych jest dobrowolne, lecz niezbędne do obsługi Serwisu.</li>
+	<li>W stosunku do Ciebie mogą być podejmowane czynności polegające na zautomatyzowanym podejmowaniu decyzji, w tym profilowaniu w celu świadczenia usług w ramach zawartej umowy oraz w celu prowadzenia przez Administratora marketingu bezpośredniego.</li>
+	 <li>Dane osobowe nie są przekazywane od krajów trzecich w rozumieniu przepisów o ochronie danych osobowych. Oznacza to, że nie przesyłamy ich poza teren Unii Europejskiej.</li></ol>
+	<h2 class="pb-12"><strong>5. Informacje w formularzach</strong></h2>
+	<ol>
+	<li>Serwis zbiera informacje podane dobrowolnie przez użytkownika, w tym dane osobowe, o ile zostaną one podane.</li>
+	<li>Serwis może zapisać informacje o parametrach połączenia (oznaczenie czasu, adres IP).</li>
+	<li>Serwis, w niektórych wypadkach, może zapisać informację ułatwiającą powiązanie danych w formularzu z adresem e-mail użytkownika wypełniającego formularz. W takim wypadku adres e-mail użytkownika pojawia się wewnątrz adresu url strony zawierającej formularz.</li>
+	<li>Dane podane w formularzu są przetwarzane w celu wynikającym z funkcji konkretnego formularza, np. w celu dokonania procesu obsługi zgłoszenia serwisowego lub kontaktu handlowego, rejestracji usług itp. Każdorazowo kontekst i opis formularza w czytelny sposób informuje, do czego on służy.</li>
+	</ol>
+	
+	<h2 class="pb-12"><strong>6. Logi Administratora</strong></h2>
+	<ol>
+	<li>Informacje zachowaniu użytkowników w serwisie mogą podlegać logowaniu. Dane te są wykorzystywane w celu administrowania serwisem.</li>
+	</ol><h2 class="pb-12"><strong>7. Istotne techniki marketingowe</strong></h2><ol><li>Operator stosuje analizę statystyczną ruchu na stronie, poprzez Google Analytics (Google Inc. z siedzibą w USA). Operator nie przekazuje do operatora tej usługi danych osobowych, a jedynie zanonimizowane informacje. Usługa bazuje na wykorzystaniu ciasteczek w urządzeniu końcowym użytkownika. W zakresie informacji o preferencjach użytkownika gromadzonych przez sieć reklamową Google użytkownik może przeglądać i edytować informacje wynikające z plików cookies przy pomocy narzędzia: https://www.google.com/ads/preferences/</li></ol>
+	
+	<h2 class="pb-12"><strong>8. Informacja o plikach cookies</strong></h2>
+	<ol>
+	<li>Serwis korzysta z plików cookies.</li>
+	<li>Pliki cookies (tzw. „ciasteczka”) stanowią dane informatyczne, w szczególności pliki tekstowe, które przechowywane są w urządzeniu końcowym Użytkownika Serwisu i przeznaczone są do korzystania ze stron internetowych Serwisu. Cookies zazwyczaj zawierają nazwę strony internetowej, z której pochodzą, czas przechowywania ich na urządzeniu końcowym oraz unikalny numer.</li>
+	<li>Podmiotem zamieszczającym na urządzeniu końcowym Użytkownika Serwisu pliki cookies oraz uzyskującym do nich dostęp jest operator Serwisu.</li>
+	<li>Pliki cookies wykorzystywane są w następujących celach:
+	<ol>
+	<li>utrzymanie sesji użytkownika Serwisu (po zalogowaniu), dzięki której użytkownik nie musi na każdej podstronie Serwisu ponownie wpisywać loginu i hasła;</li>
+	<li>realizacji celów określonych powyżej w części "Istotne techniki marketingowe";</li>
+	</ol>
+	</li>
+	<li>W ramach Serwisu stosowane są dwa zasadnicze rodzaje plików cookies: „sesyjne” (session cookies) oraz „stałe” (persistent cookies). Cookies „sesyjne” są plikami tymczasowymi, które przechowywane są w urządzeniu końcowym Użytkownika do czasu wylogowania, opuszczenia strony internetowej lub wyłączenia oprogramowania (przeglądarki internetowej). „Stałe” pliki cookies przechowywane są w urządzeniu końcowym Użytkownika przez czas określony w parametrach plików cookies lub do czasu ich usunięcia przez Użytkownika.</li>
+	<li>Oprogramowanie do przeglądania stron internetowych (przeglądarka internetowa) zazwyczaj domyślnie dopuszcza przechowywanie plików cookies w urządzeniu końcowym Użytkownika. Użytkownicy Serwisu mogą dokonać zmiany ustawień w tym zakresie.&nbsp;Przeglądarka internetowa umożliwia usunięcie plików cookies. Możliwe jest także automatyczne blokowanie plików cookies Szczegółowe informacje na ten temat zawiera pomoc lub dokumentacja przeglądarki internetowej.</li>
+	<li>Ograniczenia stosowania plików cookies mogą wpłynąć na niektóre funkcjonalności dostępne na stronach internetowych Serwisu.</li>
+	<li>Pliki cookies zamieszczane w urządzeniu końcowym Użytkownika Serwisu wykorzystywane mogą być również przez współpracujące z operatorem Serwisu podmioty, w szczególności dotyczy to firm: Google (Google Inc. z siedzibą w USA), Facebook (Facebook Inc. z siedzibą w USA), Twitter (Twitter Inc. z siedzibą w USA).</li>
+	</ol>
+	<h2 class="pb-12"><strong>9. Zarządzanie plikami cookies – jak w praktyce wyrażać i cofać zgodę?</strong></h2>
+	<ol>
+	<li>Jeśli użytkownik nie chce otrzymywać plików cookies, może zmienić ustawienia przeglądarki. Zastrzegamy, że wyłączenie obsługi plików cookies niezbędnych dla procesów uwierzytelniania, bezpieczeństwa, utrzymania preferencji użytkownika może utrudnić,&nbsp;a w skrajnych przypadkach może uniemożliwić korzystanie ze stron www</li>
+	<li>W celu zarządzania ustawienia cookies wybierz z listy poniżej przeglądarkę internetową, której używasz i postępuj zgodnie z instrukcjami:
+	<ul>
+	<li><a href="https://support.microsoft.com/pl-pl/help/10607/microsoft-edge-view-delete-browser-history">Edge</a></li>
+	<li><a href="https://support.microsoft.com/pl-pl/help/278835/how-to-delete-cookie-files-in-internet-explorer">Internet Explorer</a></li>
+	<li><a href="http://support.google.com/chrome/bin/answer.py?hl=pl&amp;answer=95647">Chrome</a></li>
+	<li><a href="http://support.apple.com/kb/PH5042">Safari</a></li>
+	<li><a href="http://support.mozilla.org/pl/kb/W%C5%82%C4%85czanie%20i%20wy%C5%82%C4%85czanie%20obs%C5%82ugi%20ciasteczek">Firefox</a></li>
+	<li><a href="http://help.opera.com/Windows/12.10/pl/cookies.html">Opera</a></li>
+	</ul>
+	<p>Urządzenia mobilne:</p>
+	<ul>
+	<li><a href="http://support.google.com/chrome/bin/answer.py?hl=pl&amp;answer=95647">Android</a></li>
+	<li><a href="http://support.apple.com/kb/HT1677?viewlocale=pl_PL">Safari (iOS)</a></li>
+	<li><a href="http://www.windowsphone.com/pl-pl/how-to/wp7/web/changing-privacy-and-other-browser-settings">Windows Phone</a></li>
+	</ul>
+	</li>
+	</ol>
+	
+	<div class="disclaimer pt-36">
+	
+	</div>
+	
+	</div>
+	</div>
+	
+		</div>
+		</section>
+    <nav class="s-menu" style="margin-top: 20%;">
+      <div class="texts-menu" style="margin-left: 45%;">
+            <font color="#e69473">Policies</font>
+            <p><a href="">Privacy</a></p>
+            
+        </div>
+    </nav>
+    
+  
+       
+</body>
+
+</html>
