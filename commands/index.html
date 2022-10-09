@@ -128,9 +128,12 @@ text-decoration: none;
     background: #303030;
     margin-top: 5%;
     width: 70%;
-    height: 1150px;
+   max-height: 80vh;
+   min-height: 80vh;
     border-radius: 2px;
     box-shadow: 0 0 10px 0.1px rgba(0, 0, 0, 0.8);
+    overflow: auto;
+    margin-bottom: 5%;
 }
 button
 {
@@ -143,15 +146,35 @@ input
     margin-top: 2%;
     width: 50%;
     height: 25px;
-    border-radius: 2px;
-    border: 1px solid #ffffff;
+
+background: #ffffff00;
+border: 0;
+    border-bottom: 2px solid #ffffff;
+    color: white;
+
+  font-size: 15px;
+
 }
+
 input:hover
 {
-    box-shadow: 0 0 7px 0.1px rgba(255, 255, 255, 0.8);
-    border: 1px solid #ffffff;
-    border-radius: 2px;
+    transition: 500ms;
+    border-bottom: 2px solid #b0b0b0;  
 }
+input:focus
+{
+    transition: 1s;
+    border-bottom: 2px solid #a45b2a; 
+
+}
+input[type="text"]
+{
+
+ outline: none;
+}
+
+
+
 .cmd1
 {
     font-weight: bold;
@@ -166,6 +189,7 @@ li
 .cmd:hover
 {
 background: #5e5e5e;
+transition: 500ms;
 
 }
 .cmd
@@ -178,6 +202,11 @@ background: #5e5e5e;
     font-family: Arial Black;
     src: url(fonts/Arial-Black.ttf);
 }
+.belka
+{
+    display: flex;
+}
+
     </style>
 </head>
 
@@ -187,10 +216,10 @@ background: #5e5e5e;
                 href="">Commands</a></div>
                 <div class="burger"><img src="assets/burger.png" width="50"><center><ul><p><a href="https://coffeerek.site">Home Page</a></p><p><a href="https://coffeerek.site/addyourbot">Add Your Bot</a></p><p><a href="https://coffeerek.site/commands">Commands</a></p></ul></center></div>
     </nav>
-    <h1 style="margin-left: 15%; font-size: 2rem;">Commands</h1>
+
     <center>
         <nav class="search1">
-    <input type="text" class="search" placeholder="Search for a command">
+  <input type="text" class="search" placeholder="Search for a command">
     <hr>
     <!--Commands-->
   <div class="cmd"><div class="cmd1">!"bot name"</div>
