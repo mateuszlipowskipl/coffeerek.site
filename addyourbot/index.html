@@ -267,6 +267,7 @@ height: 35px;
 }
 .send:hover
 {
+    transition: 400ms;
     background: rgb(118, 118, 118);
     border: 1px solid white;
 }
@@ -280,10 +281,25 @@ input
     border-radius: 7px;
     border: 1px solid rgb(106, 106, 106);
     color: #f5f6fa;
+    height: 30px;
+    width: 20%;
 }
-input:hover
+
+.onecheck
 {
-    box-shadow: 0 0 16px 1px rgba(160, 160, 160, 0.8);
+    width: auto;
+    height: auto;
+}
+
+textarea
+{
+    background: rgb(56, 56, 56);
+    border-radius: 7px;
+    border: 1px solid rgb(106, 106, 106);
+    color: #f5f6fa;
+    height: 30px;
+    width: 20%;
+    font-family: sans-serif;
 }
     </style>
 </head>
@@ -305,10 +321,7 @@ input:hover
         <hr>
        <p>Bot Name <img src="assets/medical.png" width="10"></p>
        <p><input type="text" name="Bot Name" placeholder="Coffeerek" required></p>
-       <p>Description <img src="assets/medical.png" width="10"></p>
-       <p><input type="text" name="Description" placeholder="Coffeerek is the best bot..." style="width: 30%; height: 50px;" required></p>
-       <p>Note for reviewer</p>
-       <p><input type="text" name="notka" placeholder="Note for reviewer..." style="width: 30%; height: 50px;"></p>
+   
        <p>Prefix <img src="assets/medical.png" width="10"></p>
        <p><input type="text" name="prefix" placeholder="! or /" required></p>
        <p>Invite URL <img src="assets/medical.png" width="10"></p>
@@ -321,7 +334,13 @@ input:hover
        <p><input type="text" name="user" placeholder="Voltaren" required></p>
        <p>Your Discord ID <img src="assets/medical.png" width="10"></p>
        <p><input type="text" name="id" placeholder="8228822872782" required></p>
-       <p>Have you joined the server? <img src="assets/medical.png" width="10"> <input type="checkbox" name="Dołączyłeś?" required></p>
+       <p>Description <img src="assets/medical.png" width="5"></p>
+       <p><textarea type="text" name="Description" placeholder="Coffeerek is the best bot..." style="width: 30%; height: 50px;" required></textarea></p>
+       <p>Note for reviewer</p>
+       <p><textarea type="text" name="notka" placeholder="Note for reviewer..." style="width: 30%; height: 50px;"></textarea></p>
+
+
+       <p>Have you joined the server? <img src="assets/medical.png" width="10"> <input type="checkbox" name="Dołączyłeś?" class="onecheck" required></p>
         <button type="submit" class="send">Add</button></center>
 
     </form>
