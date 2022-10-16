@@ -1,398 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-B8L4TEXC7L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-B8L4TEXC7L');
-</script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525115078356816"
-     crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
     <title>Coffeerek</title>
-    <meta name="author" content="Mateusz Lipowski">
-    <meta property="og:site_name" content="Coffeerek">
-    <meta property="og:type" content="website">
- <meta property="og:title" content="Coffeerek">
- <meta property="og:url" content="https://coffeerek.site">
- <meta property="og:image" content="https://coffeerek.site/assets/logo.png">
- <meta property="og:description" content="Best Discord bot, learn more about it and add your search bot.">
- <meta property="og:image:alt" content="logo">
- <meta name="description" content="Best Discord bot, learn more about it and add your search bot."/>
-  
-     <meta name="theme-color" content="#9f4d34">
-
-
-
- <link rel="icon" sizes="192x192" href="assets/logo.png"/>
     <style>
-        .menu {
-            background: #303030;
-            top: 0;
-            left: 0;
+       
+       .header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(89, 56, 28);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+* {
+    outline: 0px;
+}
+
+header {
+    display: block;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+            padding: 0;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    font-size: 10px;
+} 
+a
+{
+    color: rgb(255, 255, 255);
+}
+a:hover
+{
+    color: brown;
+    transition: 500ms;
+}
+footer
+{
+    position: fixed;
+    bottom: 0;
+    background: rgb(89, 56, 28);
+    width: 100%;
+    display: flex;
+    color: white;
+text-align: center;
             padding: 0 3rem;
             display: flex;
             flex-direction: row;
             align-items: center;
-        }
-
-        .menu a {
-            margin: 0 2rem;
+}
+.two
+{
+    margin: 0 2rem;
             text-decoration: none;
             padding: 0.5rem .5rem;
             color: rgb(255, 255, 255);
-            font-family: arial black, sans-serif;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        body {
-            font-family: sans-serif;
-            padding: 0;
-            margin: 0;
-            background: rgb(66, 66, 66);
-            color: white;
-        }
-
-        .s-a h1 {
-            margin-top: 20%;
-
-            font-size: 4rem;
-        }
-
-        .s-a button {
-            background: #af6c51;
-            height: 40px;
-            min-width: 70px;
-            margin: 0 2rem;
-            color: white;
-            border-radius: 3px;
-            font-size: 14px;
-            border: 1px;
-         
-        }
-
-        .s-a button:hover {
-            transition: 600ms;
-            cursor: pointer;
-            background: #ab8779;
-        }
-
-        @font-face {
-            font-family: Arial Black;
-            src: url(fonts/Arial-Black.ttf);
-        }
-
-        .s-b {
-
-            margin-top: 10%;
-
-        }
-
-        .s-b div {
-            display: inline-block;
-            margin: 0 2rem;
-        }
-
-        .s-b1:hover {
-            transition: 300ms;
-            box-shadow: 0 0 16px 1px rgba(255, 255, 255, 0.8);
-        }
-
-        .s-b2:hover {
-            transition: 300ms;
-            box-shadow: 0 0 16px 1px rgba(255, 255, 255, 0.8);
-        }
-
-        .s-b3:hover {
-            transition: 300ms;
-            box-shadow: 0 0 16px 1px rgba(255, 255, 255, 0.8);
-        }
-
-        .s-b1 {
-
-            background: rgb(194, 194, 194);
-            width: 200px;
-            height: 200px;
-            border-radius: 10px;
-            text-align: center;
-
-        }
-
-        .s-b2 {
-
-            background: rgb(194, 194, 194);
-            width: 200px;
-            height: 200px;
-            border-radius: 10px;
-            text-align: center;
-            position: absolute;
-            left: 40%;
-        }
-
-        .s-b3 {
-
-            background: rgb(194, 194, 194);
-            width: 200px;
-            height: 200px;
-            border-radius: 10px;
-            text-align: center;
-            position: absolute;
-            left: 81%;
-        }
-
-        .s-c {
-
-            margin-top: 10%;
-            margin-left: 5%;
-        }
-
-        .s-c .texts-c {
-            margin-left: 70%;
-            margin-top: -25%;
-        }
-
-        @media screen and (max-width: 928px) {
-            .s-cimg {
-                width: 250px;
-                height: auto;
-            }
-        }
-
-        @media screen and (max-width: 797px) {
-            .menua {
-                display: none;
-            }
-        }
-
-        @media screen and (max-width: 1000px) {
-            .s-b {
-                display: none;
-            }
-        }
-        @media screen and (max-width: 797px){
-            .burger
-            {
-                display: block;
-            }
-        }
-        @media screen and (min-width: 797px){
-            .burger
-            {
-                display: none;
-            }
-        }
-        @media screen and (max-width: 1299px){
-            .s-d img
-            {
-                width: 250px;
-                height: auto;
-            } }
-        @media screen and (max-width: 780px){
-            .s-d
-            {
-                display: none;
-            }
-           
-        }
-        .s-menu {
-            background: #303030;
-            top: 0;
-            left: 0;
-            padding: 0 3rem;
-            display: flex;
-   text-align: center;
-          align-items: center;          
-        }
-
-        .s-menu .texts-menu {
-            padding: 0 3rem;
-text-decoration: none;
-
-color: rgb(255, 255, 255);
-font-family: sans-serif;
-
-
-}
-.s-menu
-{
-    height: 150px;
-}
-a {
-color: white;
-text-decoration: none;
-}
-.wrapper {
-  padding: 32px;
-}
-
-.cookie-container {
-  position: fixed;
-  bottom: -100%;
-  left: 0;
-  right: 0;
-  background: #262626;
-  color: #f5f6fa;
-  padding: 0 32px;
-  box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
-
-  transition: 400ms;
-}
-
-.cookie-container.active {
-  bottom: 0;
-}
-
-.cookie-container a {
-  color: #f5f6fa;
-}
-
-.cookie-btn {
-  background: #262626;
-  border: 1px solid white;
-  color: #ffffff;
-  padding: 12px 48px;
-  font-size: 18px;
-  margin-bottom: 16px;
-
-  cursor: pointer;
-}
-.cookie-btn:hover
-{
-    background: #4f4f4f;
-  border: 1px solid white;
-  color: #ffffff;
-}
-.burger
-{
+          font-weight: bold;  
+          font-size: 20px;
     margin-left: 50%;
-}
-.burger ul 
-{
-display: none;
-}
-.burger:hover ul
-{
-    display: block;
-}
-.burger ul
-{
-    width: 200px;
-    height: 150px;
-    background: rgb(255, 255, 255);
-    border-radius: 10px;
-    position: absolute;
-    color: black;
- left: 50%;
-}
-.burger ul a
-{
-    color: black;
-}
-.s-d img
-{
-    margin-top: 20%;
-    margin-left: 60%;
-}
-.texts-d
-{
-    margin-top: -20%;
-    margin-left: 10%;
-}
-.cos
-{
-    background: #799400;
-    border: 1px solid #ffff00;
-width: 150px;
-}
-@media screen and (max-width: 987px){
-    .s-menu
-    {
-        height: 200px;
-    }
-}
-@media screen and (max-width: 987px){
-    .cos
-    {
-        display: block;
-    }
-}
-@media screen and (min-width: 987px){
-    .cos
-    {
-        display: none;
-    }
-}
 
+}
     </style>
 </head>
-
 <body>
-    <nav class="menu"><a href="#"><img src="assets/logo.png" width="50"></a>
-        <div class="menua"><a href="#">Home Page</a> <a href="addyourbot">Add Your Bot</a> <a
-                href="commands">Commands</a></div>
-                <div class="burger"><img src="assets/burger.png" width="50"><center><ul><p><a href="#">Home Page</a></p><p><a href="addyourbot">Add Your Bot</a></p><p><a href="commands">Commands</a></p></ul></center></div>
-    </nav>
-    <nav class="s-a">
-        <center>
-         <h1>Coffeerek</h1> 
-            <a
-                href="https://discord.com/api/oauth2/authorize?client_id=972934810156818543&permissions=8&scope=bot%20applications.commands"><button>Invite</button></a>
-            <a href="https://discord.gg/e2u5bMeYwR"><button>Get Support</button></a>
-        </center>
-    </nav>
-    <nav class="s-b">
-        <div class="s-b1"><img src="assets/command.png" width="70">
-            <h3>Commands<p>20+</p>
-            </h3>
-        </div>
-        <div class="s-b2"><img src="assets/server.png" width="70" style="margin-top: 4px;">
-            <h3>Servers <p>60+</p>
-            </h3>
-        </div>
-        <div class="s-b3"><img src="assets/user.png" width="70" style="margin-top: 4px;">
-            <h3>Users <p>30k+</p>
-            </h3>
-        </div>
-    </nav>
-    <nav class="s-c"> <img src="assets/help.png" class="s-cimg">
-        <div class="texts-c">
-            <h2>!help</h2>
-            <p>The !help command contains all of the Coffeerek bot commands.</p>
-            <p>And maybe help you in handling the bot.</p>
-        </div>
-    </nav>
-<nav class="s-d"> <img src="assets/info.png"><div class="texts-d"><h1>Info</h1><p>The bot is looking for other bots has funny commands <p>and has a ticket system, this is a good and recommended</p> bot if you need help join our Discord server.</p></div></nav>
-    <nav class="s-menu" style="margin-top: 20%;">
-     <a href="https://obefison.live/"><img src="assets/nependi.png" width="200"></a>
-      <div class="texts-menu" style="margin-left: 45%;">
-            <font color="#e69473">Policies</font>
-            <p><a href="privacy">Privacy</a></p>
-            <p class="cos">To see the full version of the website, go to the website on your computer</p>
-            
-        </div>
-    </nav>
-    <div class="cookie-container">
-        <p>
-          We use cookies in this website to give you the best experience on our
-          site. To find out more, read our
-          <a href="privacy" style="text-decoration: underline;">privacy policy</a>.
-        </p>
-  
-        <button class="cookie-btn">
-          Okay
-        </button>
-      </div>
-      <script src="js.js"></script>
+    <header class="header">
+        <img class="header__brand" src="assets/logo.png" width="50">
+        <p class="header__heading">The Coffeerek service was shut down on October 16, 2022.  If you want to see other projects, please visit <a href="https://obefison.live">NePendi</a>.
+      </header>
+      
 </body>
-
 </html>
